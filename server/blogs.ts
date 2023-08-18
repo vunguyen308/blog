@@ -3,7 +3,8 @@ import {discussionDetailGql, discussionGql} from './gql'
 
 const API_URL = 'https://api.github.com/graphql'
 const GH_ACCESS_TOKEN = process.env.GH_ACCESS_TOKEN
-const DISCUSSION_CATEGORY_ID = process.env.DISCUSSION_CATEGORY_ID
+// const DISCUSSION_CATEGORY_ID = process.env.NEXT_PUBLIC_DISCUSSION_CATEGORY_ID
+const DISCUSSION_CATEGORY_ID = 'DIC_kwDOKGgILc4CYkhu'
 
 export async function getBlogs(): Promise<BlogPost[]> {
   const response = await fetch(API_URL, {

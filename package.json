@@ -1,5 +1,5 @@
 {
-  "name": "devblog-yt",
+  "name": "blog",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,12 +7,15 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "start:dev": "PORT=3000 env-cmd -f .env.local next start",
+    "build:dev": "env-cmd -f .env.local next build",
     "format": "npx prettier --write ."
   },
   "dependencies": {
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
+    "env-cmd": "^10.1.0",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.4",
     "github-syntax-dark": "^0.5.0",
