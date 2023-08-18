@@ -2,7 +2,7 @@ import {BlogDetail, BlogPost} from '../types/blog'
 import {discussionDetailGql, discussionGql} from './gql'
 
 const API_URL = 'https://api.github.com/graphql'
-const GH_ACCESS_TOKEN = process.env.GH_ACCESS_TOKEN
+const GH_ACCESS_TOKEN = process.env.NEXT_PUBLIC_GH_ACCESS_TOKEN
 // const DISCUSSION_CATEGORY_ID = process.env.NEXT_PUBLIC_DISCUSSION_CATEGORY_ID
 const DISCUSSION_CATEGORY_ID = 'DIC_kwDOKGgILc4CYkhu'
 

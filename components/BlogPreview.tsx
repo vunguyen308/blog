@@ -8,7 +8,7 @@ const BlogPreview: React.FC<BlogPost> = (props) => {
   return (
     <section>
       <BlogHeader createdAt={createdAt} author={author} />
-      <h2 className="font-bold"> {title} </h2>
+      <h2 className="font-bold text-[1.5rem]"> {title} </h2>
       <p className="mt-2"> {previewText} </p>
       <div className=" flex gap-3">
         {tags.map((tag, idx) => {

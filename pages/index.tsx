@@ -33,7 +33,7 @@ const Home: NextPage = ({
       <title> Home Page </title>
       <section>
         <div className="mt-3 text-center">
-          <h1 className="text-[3rem]"> Welcome to DevBlog </h1>
+          <h1 className="text-2xl font-semibold uppercase"> Welcome to my Blog </h1>
           <p>
             A full-stack blog made with Next.js, TailwindCSS, Github GraphQL
           </p>
@@ -61,7 +61,7 @@ const Home: NextPage = ({
           return (
             <div
               key={blog.id}
-              className="max-w-[28em] max-h-[20em] overflow-hidden mx-6 mb-6 bg-neutral-300 text-zinc-800 rounded-lg p-4 hover:bg-neutral-500 hover:text-neutral-300 transition-all duration-300"
+              className="w-[40em] max-h-[20em] overflow-hidden mx-6 mb-6 bg-neutral-300 text-zinc-800 rounded-lg p-4 hover:bg-neutral-500 hover:text-neutral-200 transition-all duration-300"
             >
               <a href={blog.url} target="_blank" rel="noreferrer">
                 <BlogPreview
