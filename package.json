@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "start:dev": "PORT=3000 env-cmd -f .env.dev next start",
+    "start:dev": "PORT=3100 env-cmd -f .env.dev next start",
     "build:dev": "env-cmd -f .env.dev next build",
     "format": "npx prettier --write ."
   },
